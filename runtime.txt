@@ -1,1 +1,1 @@
-py -3.9 --version
+python-3.9.18
