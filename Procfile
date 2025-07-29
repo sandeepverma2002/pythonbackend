@@ -1,1 +1,1 @@
-'web: gunicorn card_backend.wsgi
+gunicorn card_backend.wsgi
