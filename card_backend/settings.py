@@ -26,8 +26,18 @@ SECRET_KEY = 'django-insecure-8lo2v962o=s506v5)l%%odmm$95*t4g#a(1s@4hr8t7q*3b9f%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'pythonbackend-1-mbh1.onrender.com',
+]
 
+CORS_ALLOWED_ORIGINS = [
+    'https://test-web-seven-liard.vercel.app',
+    # Add more frontend URLs here if needed
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
@@ -54,7 +64,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 
 ]
-CORS_ALLOW_ALL_ORIGINS = True
 
 
 ROOT_URLCONF = 'card_backend.urls'
